@@ -280,7 +280,8 @@ class ConfirmationCodeInput extends PureComponent<Props, State> {
         onFocus={this.handlerOnFocus}
         style={concatStyles(styles.maskInput, inputProps.style)}
         onChangeText={this.handlerOnTextChange}
-        value={this.state.codeValue}
+        // value={this.state.codeValue}
+        value={this.props.defaultCode}
       />
     );
   }
